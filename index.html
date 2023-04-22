@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do galo</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="mainDisplay">
+        <div>
+        <h1 class="titulo">Jogo do galo</h1>
+        </div>
+        <div class="Agrupa">
+        <div class="BlocoDeJogo">
+        	<div class="botoes">
+        		<button id="0" onclick="jogo(0)"></button>
+        		<button id="1" onclick="jogo(1)"></button>
+        		<button id="2" onclick="jogo(2)"></button>
+        		<button id="3" onclick="jogo(3)"></button>
+        		<button id="4" onclick="jogo(4)"></button>
+        		<button id="5" onclick="jogo(5)"></button>
+        		<button id="6" onclick="jogo(6)"></button>
+        		<button id="7" onclick="jogo(7)"></button>
+        		<button id="8" onclick="jogo(8)"></button>
+        	</div>
+    	</div>
+        <div class="scores">
+            <h3>Agora joga:</h3>
+            <h3 id="vez"></h3>
+            <div>
+                <h3 id="PontuacaoNome1" value="Jogador 1">Pontuação Jogador 1:</h3>
+                <input type="text" id="Nome1" placeholder="Nome Jogador 1" onfocus="ChangeName(Nome1)"> 
+                <h3 id="scorePlayer1">0</h3>
+            </div>
+            <div>
+                <h3 id="PontuacaoNome2" value="Jogador 2">Pontuação Jogador 2:</h3>
+                <input type="text" id="Nome2" placeholder="Nome Jogador 2" onfocus="ChangeName(Nome2)">
+                <h3 id="scorePlayer2">0</h3>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
